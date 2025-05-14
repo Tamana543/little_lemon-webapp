@@ -5,21 +5,26 @@ return (
      <div class="container">
      <Link to="/">
                <img
-                 src={require("../assets/nav-logo.png")}
+                 src="../assets/nav-logo.png"
                  alt="Little Lemon logo"
                  className="nav-image"
                ></img>
              </Link>
-     <nav class="navbar">
+     
           <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Menu</a></li>
-               <li><a href="#">Reservations</a></li>
-               <li><a href="#">Order</a></li>
-               <li><a href="#">Login</a></li>
+               <li>
+               <Link className="hover-effect" to="/">
+                       <h3>Home</h3>
+                     </Link>
+                     </li>
+               <li><Link to="/"><h3>About</h3></Link></li>
+               <li><Link to="/"><h3>Menu</h3></Link></li>
+               <li><Link to="/"><h3>Reservations</h3></Link></li>
+               <li><Link to="/"><h3>Order</h3></Link></li>
+               <li><Link to="/"><h3>Login</h3></Link></li>
+             
           </ul>
-     </nav>
+     
 </div>
 )
 }
