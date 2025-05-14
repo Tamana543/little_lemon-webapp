@@ -1,3 +1,3 @@
-export default function BookingPage(){
+export default function Reservation(){
      
 }
