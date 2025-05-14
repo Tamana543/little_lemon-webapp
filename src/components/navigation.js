@@ -1,8 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom"
-export default function Navigation(){
+export default function Navigation(props){
 return (
-     <div class="container">
+     <div className={`navbar-menu ${props.device}`}>
+      {props.device === "mobile" ? (
+        ""
+      ):(
+
      <Link to="/">
                <img
                  src="../assets/nav-logo.png"
@@ -10,20 +14,25 @@ return (
                  className="nav-image"
                ></img>
              </Link>
-     
-          <ul>
-               <li>
+      )}
                <Link className="hover-effect" to="/">
                        <h3>Home</h3>
                      </Link>
-                     </li>
-               <li><Link to="/"><h3>About</h3></Link></li>
-               <li><Link to="/"><h3>Menu</h3></Link></li>
-               <li><Link to="/"><h3>Reservations</h3></Link></li>
-               <li><Link to="/"><h3>Order</h3></Link></li>
-               <li><Link to="/"><h3>Login</h3></Link></li>
-             
-          </ul>
+
+              <Link to="/about" className="hover-effect"><h3>About</h3></Link>
+              {/* In here I added image as menu  */}
+              <a 
+              className="hover-effect"
+               href={require("../assets/menu.webp")}
+               target="_blank"
+               rel="noreferrer"
+               >
+              <h3>Menu</h3>
+              </a>
+              <Link to="/reservations" className="hover-effect"><h3>Reservations</h3></Link>
+              <Link to="/order" className="hover-effect"><h3>Order</h3></Link>
+              <Link to="/login" className="hover-effect"><h3>Login</h3></Link>
+
      
 </div>
 )
