@@ -111,8 +111,33 @@ export default function ReservationForm(props){
           {finalTime}
         </select>
       </div>
-
-      
+               <div>
+        <label htmlFor="occasion">Occasion</label> <br></br>
+        <select
+          id="occasion"
+          value={occasion}
+          onChange={(e) => setOccasion(e.target.value)}
+        >
+          <option>None</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Engagement</option>
+          <option>Other</option>
+        </select>
+      </div>
+               <div>
+        <label htmlFor="preferences">Seating preferences</label> <br></br>
+        <select
+          id="preferences"
+          value={preferences}
+          onChange={(e) => setPreferences(e.target.value)}
+        >
+          <option>None</option>
+          <option>Indoors</option>
+          <option>Outdoor (Patio)</option>
+          <option>Outdoor (Sidewalk)</option>
+        </select>
+      </div>
                     </form>
 
      )
