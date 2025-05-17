@@ -13,5 +13,45 @@ export default function ReservationForm(props){
 
      const [finalTime, setFinalTime] = useState(
           props.availableTimes.map((times)=> <option>{times}</option>)
+     );
+
+     function handleDateChange(event){
+          setDate(event.target.value);
+          let stringify = event.target.value;
+          const date = new Date(stringify)
+          props.updateTimes(date);
+          setFinalTime(props.availableTimes.map((times)=> <option>{times}</option>))
+     }
+     return(
+          <form className="reservation-form">
+               <div>
+                    <label htmlFor="fName">First Name</label><br></br>
+                    <input 
+                    type="text"
+                    id="fName"
+                    placeholder="First Name"
+                    required
+                    minLength={2}
+                    maxLength={50}
+                    value={fName}
+                    onChange={(event)=>setFName(event.target.value)}
+                    ></input>
+                    </div>
+
+                    <div>
+                    <label htmlFor="lName">Last Name</label><br></br>
+                    <input 
+                    type="text"
+                    id="lName"
+                    placeholder="Last Name"
+                    required
+                    minLength={2}
+                    maxLength={50}
+                    value={LName}
+                    onChange={(event)=>setLName(event.target.value)}
+                    ></input>
+                    </div>
+          </form>
+          
      )
 }
