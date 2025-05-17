@@ -51,7 +51,46 @@ export default function ReservationForm(props){
                     onChange={(event)=>setLName(event.target.value)}
                     ></input>
                     </div>
-          </form>
-          
+                    <div>
+                         <label htmlFor="email">Email</label><br></br>
+                         <input 
+                         type="email"
+                         id="email"
+                         placeholder="Email"
+                         value={email}
+                         required
+                         minLength={4}
+                         maxLength={200}
+                         onChange={(event)=>setEmail(event.target.value)}
+                         ></input>
+                    </div>
+                       <div>
+                         <label htmlFor="phonenum">Phone Number</label> <br></br>
+                         <input
+                         type="tel"
+                         id="phonenum"
+                         placeholder="(xxx)-xxx-xxxx"
+                         value={tel}
+                         required
+                         minLength={10}
+                         maxLength={25}
+                         onChange={(e) => setTel(e.target.value)}
+                    ></input>
+                         </div>     
+                           <div>
+        <label htmlFor="people">Number of People</label> <br></br>
+        <input
+          type="number"
+          id="people"
+          placeholder="Number of People"
+          value={people}
+          required
+          min={1}
+          max={100}
+          onChange={(e) => setPeople(e.target.value)}
+        ></input>
+      </div>
+                    </form>
+
      )
 }
