@@ -51,6 +51,7 @@ export default function ReservationForm(props){
                     onChange={(event)=>setLName(event.target.value)}
                     ></input>
                     </div>
+
                     <div>
                          <label htmlFor="email">Email</label><br></br>
                          <input 
@@ -64,6 +65,7 @@ export default function ReservationForm(props){
                          onChange={(event)=>setEmail(event.target.value)}
                          ></input>
                     </div>
+
                        <div>
                          <label htmlFor="phonenum">Phone Number</label> <br></br>
                          <input
@@ -76,7 +78,8 @@ export default function ReservationForm(props){
                          maxLength={25}
                          onChange={(e) => setTel(e.target.value)}
                     ></input>
-                         </div>     
+                         </div> 
+
                            <div>
         <label htmlFor="people">Number of People</label> <br></br>
         <input
@@ -89,7 +92,27 @@ export default function ReservationForm(props){
           max={100}
           onChange={(e) => setPeople(e.target.value)}
         ></input>
+                          </div>
+
+                          <div>
+        <label htmlFor="date">Select Date</label> <br></br>
+        <input
+          type="date"
+          id="date"
+          required
+          value={date}
+          onChange={handleDateChange}
+        ></input>
       </div>
+
+      <div>
+        <label htmlFor="time">Select Time</label> <br></br>
+        <select id="time" required>
+          {finalTime}
+        </select>
+      </div>
+
+      
                     </form>
 
      )
