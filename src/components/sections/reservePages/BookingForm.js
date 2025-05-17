@@ -138,7 +138,31 @@ export default function ReservationForm(props){
           <option>Outdoor (Sidewalk)</option>
         </select>
       </div>
+          <div>
+        <label htmlFor="comments">Additional Comments</label> <br></br>
+        <textarea
+          id="comments"
+          rows={8}
+          cols={50}
+          placeholder="Additional Comments"
+          value={comments}
+          onChange={(e) => setComments(e.target.value)}
+        ></textarea>
+      </div>
+
+      <div>
+        <br></br>
+        <small>
+          <p>
+            Note: You cannot edit your reservation after submission. Please
+            double-check your answer before submitting your reservation request.
+          </p>
+        </small>
+        <Link className="action-button" to="/confirmation">
+          Book Table
+        </Link>
+      </div>
                     </form>
 
-     )
+     );
 }
