@@ -1,6 +1,6 @@
 import HeroImg from "../../../assets/food/food4.webp"
 export default function Login() {
-     <header className="reserve-table">
+    return ( <header className="reserve-table">
           <img
           className="header-reserve"
           src={HeroImg}
@@ -9,5 +9,5 @@ export default function Login() {
           < div className="reserve-header-text">
           <h1>Login</h1>
           </div>
-     </header>
+     </header>)
 }
