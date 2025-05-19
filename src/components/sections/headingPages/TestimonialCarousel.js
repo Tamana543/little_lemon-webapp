@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import TestimonialCard from './CardInfo/TestimonialCard';
+import TestimonialCard from './Cardinfo/TestimonialCard';
 export default function CarouselPage(){
      return (
           <Carousel infiniteLoop={true} autoPlay={true} interval={5000} showStatus={false}>

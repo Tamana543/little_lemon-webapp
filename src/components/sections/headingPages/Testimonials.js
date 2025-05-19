@@ -1,5 +1,5 @@
 import Carousel from './TestimonialCarousel'
-import TestimonialCard from './CardInfo/TestimonialCard'
+import TestimonialCard from './Cardinfo/TestimonialCard'
 export default function Testimonials(){
      return(
           <section className='testimonials'>
