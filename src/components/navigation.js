@@ -1,39 +1,43 @@
-import React from "react";
 import {Link} from "react-router-dom"
+
 export default function Navigation(props){
 return (
-     <div className={`navbar-menu ${props.device}`}>
+     <menu className={`navbar-menu ${props.device}`}>
       {props.device === "mobile" ? (
         ""
       ):(
-
      <Link to="/">
                <img
-                 src="../assets/nav-logo.png"
+                 src={require("../assets/nav-logo.png")}
                  alt="Little Lemon logo"
                  className="nav-image"
                ></img>
              </Link>
       )}
                <Link className="hover-effect" to="/">
-                       <h3>Home</h3>
-                     </Link>
-
-              <Link to="/about" className="hover-effect"><h3>About</h3></Link>
-              {/* In here I added image as menu  */}
-              <a 
-              className="hover-effect"
-               href={require("../assets/menu.webp")}
-               target="_blank"
-               rel="noreferrer"
-               >
-              <h3>Menu</h3>
-              </a>
-              <Link to="/reservations" className="hover-effect"><h3>Reservations</h3></Link>
-              <Link to="/order" className="hover-effect"><h3>Order</h3></Link>
-              <Link to="/login" className="hover-effect"><h3>Login</h3></Link>
-
+        <h1>Home</h1>
+      </Link>
+      <Link className="hover-effect" to="/about">
+        <h1>About</h1>
+      </Link>
+      <a
+        className="hover-effect"
+        href={require("../assets/menu.webp")}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h1>Menu</h1>
+      </a>
+      <Link className="hover-effect" to="/reservations">
+        <h1>Reservations</h1>
+      </Link>
+      <Link className="hover-effect" to="/order">
+        <h1>Order</h1>
+      </Link>
+      <Link className="hover-effect" to="/login">
+        <h1>Login</h1>
+      </Link>
      
-</div>
+</menu>
 )
 }
