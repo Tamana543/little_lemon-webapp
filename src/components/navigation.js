@@ -26,6 +26,7 @@ return (
         target="_blank"
         rel="noreferrer"
       >
+        {/* In above I added the menu Image */}
         <h1>Menu</h1>
       </a>
       <Link className="hover-effect" to="/reservations">
