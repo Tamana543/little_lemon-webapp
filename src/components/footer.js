@@ -3,16 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer(){
 return (
      <footer>
-          <menu>
-               <li className="img-footer">
-                    <img
-                    src={require("../assets/footer-logo.png")}
-                    alt="Logo">
-
-                    </img>
-               </li>
-
-          </menu>
+       
           <li>
            <h2 className="footer-header">Contact</h2>
           <ul className="footer-links">
