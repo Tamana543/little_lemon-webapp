@@ -1,8 +1,8 @@
 import Carousel from './SpecialsCarousel'
 import GreekSalad from '../../../assets/food/greek-salad.webp'
 import Bruschetta from '../../../assets/food/bruschetta.jpeg';
-import LemonDessert from '../../../assets/food/greek-salad.webp'
-import SpecialCard from '../../../assets/food/greek-salad.webp'
+import LemonDessert from '../../../assets/food/lemon-dessert.webp';
+import SpecialCard from './Cardinfo/SpecialCard';
 
 export default function Specials() {
      return(
