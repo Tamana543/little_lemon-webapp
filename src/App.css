@@ -375,7 +375,20 @@ footer > menu {
   margin-top: 10%;
   background-color: #f4ce14;
   padding: 10px;
-  
+  margin: 6%;
+}
+.form_login {
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  gap: 10px;
+  height: 80%;
+}
+.label_login {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-right: 3%;
+  width: 50%;
 }
 /* RESERVE A TABLE */
 .reserve-table {
@@ -384,7 +397,11 @@ footer > menu {
   color: white;
   margin-top: -1.4rem;
 }
-
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header-reserve {
   width: 100vw; /* width of container */
   height: 20rem; /* height of container */
