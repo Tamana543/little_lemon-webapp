@@ -341,6 +341,42 @@ footer > menu {
   background-color: white;
   padding: 0.5rem;
 }
+/* LOGIN DETAILS */
+.log_in {
+  background: none;
+  /* border: 1px solid #df29f0; */
+  box-shadow: inset 0px 0px 0px 1px #df29f0;
+
+  color: #000;
+}
+.window {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 39%;
+  height: 22rem;
+  position: relative;
+}
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+#Name,
+#lastName,
+#password {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #f4ce14;
+
+}
+.submit {
+  margin-top: 10%;
+  background-color: #f4ce14;
+  padding: 10px;
+  
+}
 /* RESERVE A TABLE */
 .reserve-table {
   position: relative;
