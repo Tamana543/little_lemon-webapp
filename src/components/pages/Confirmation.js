@@ -23,7 +23,7 @@ export default function Confirmation(){
                          Browse Now
                     </a>
                     <Link className="redirect-button" to="/order">Order Online</Link>
-                    <Link className="redirect-button" to="/">Home Page
+                    <Link className="redirect-button" to="#">Home Page
                     </Link>
                 </section>
           </header>
