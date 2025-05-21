@@ -14,7 +14,7 @@ return (
                ></img>
              </Link>
       )}
-               <Link className="hover-effect" to="/">
+      <Link className="hover-effect" to="/">
         <h1>Home</h1>
       </Link>
       <Link className="hover-effect" to="/about">
