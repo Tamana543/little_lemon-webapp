@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer(){
 return (
      <footer>
-       
+      <menu>
           <li>
            <h2 className="footer-header">Contact</h2>
           <ul className="footer-links">
@@ -42,6 +42,7 @@ return (
             </a>
           </ul>    
           </li>
+          </menu>
      </footer>
 )
 }
