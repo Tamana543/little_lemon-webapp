@@ -10,6 +10,7 @@ export default function Login() {
           <div className="reserve-header-text">
           <h1>Login</h1>
           </div>
+          
      </header>
      );
 }

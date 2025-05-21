@@ -295,7 +295,7 @@ footer {
   margin-top: -1.4rem;
 }
 footer > menu {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .footer-header {
@@ -303,7 +303,7 @@ footer > menu {
 }
 
 .footer-links {
-  padding: 0;
+  padding-top: 30px;
   list-style: none;
 }
 
