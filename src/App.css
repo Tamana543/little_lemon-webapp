@@ -390,6 +390,27 @@ footer > menu {
   margin-right: 3%;
   width: 50%;
 }
+/* About Page */
+.about_aboutPage {
+  flex-direction: column;
+  width: 50%;
+  margin: 10px auto;
+  margin-bottom: 5%;
+}
+.about_aboutPage-heading {
+  font-size: 2rem;
+  border-bottom: 5px solid #f4ce14;
+}
+.about_aboutPage-paragraph {
+  font-size: 1.2rem ;
+  line-height: 35px;
+}
+.spe:hover {
+border: none !important;
+}
+.hidden {
+  display: none;
+}
 /* RESERVE A TABLE */
 .reserve-table {
   position: relative;
